@@ -3,114 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vintagemoda.glow | Moda vintage</title>
-  <meta name="description" content="vintagemoda.glow - Moda vintage con estilo propio. Prendas seleccionadas, stock limitado y atención personalizada.">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <title>Portfolio | Cintia Ramos</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="portfolio.css">
+
+  <!-- Google Fonts (opcional, después lo ajustamos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container header-content">
-      <h1 class="logo">vintagemoda<span>.glow</span></h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#sobre">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Cintia Ramos</h1>
+    <h2>Front-End Developer</h2>
+    <p>Desarrollo sitios web modernos, claros y funcionales para proyectos y emprendimientos.</p>
+    <a href="vintage.html" class="btn small">Ver proyecto</a>
   </header>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="container">
-      <h2>Moda vintage con estilo propio</h2>
-      <p>
-        Prendas seleccionadas, cómodas y con identidad.<br>
-        Stock limitado • Atención personalizada
-      </p>
-      <a 
-  href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20productos%20de%20vintagemoda.glow" 
-  class="btn-whatsapp" 
-  target="_blank"
->
-  Comprar por WhatsApp
-</a>
-    </div>
+  <!-- SOBRE MI -->
+  <section class="about">
+    <h3>Sobre mí</h3>
+    <p>
+      Soy desarrolladora web enfocada en front-end. Me gusta convertir ideas en experiencias
+      digitales simples, visuales y funcionales. Este portfolio reúne mis proyectos y prácticas
+      en desarrollo web.
+    </p>
   </section>
 
-  <!-- PRODUCTOS -->
-  <section id="productos" class="productos">
-    <div class="container">
-      <h2>Productos destacados</h2>
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="projects">
+    <h3>Proyectos</h3>
 
-      <div class="productos-grid">
-        <div class="producto">
-          <img src="images/enterito.jpg" alt="Enterito Jean" class="img-producto">
-          <h3>Enterito de jean</h3>
-          <p>Consultar</p>
-        </div>
+    <div class="projects-grid">
 
-        <div class="producto">
-          <img src="images/vestido.jpg" alt="Vestido Retro" class="img-producto">
-          <h3>Vestido retro clásico</h3>
-          <p>Consultar</p>
-        </div>
-
-        <div class="producto">
-          <img src="images/vestidos.jpg" alt="Vestido Seda" class="img-producto">
-          <h3>Vestido de seda ED Limitada</h3>
-          <p>Consultar</p>
-        </div>
-
-        <div class="producto">
-          <img src="images/Ropaa.jpg" alt="Conjunto Vintage" class="img-producto">
-          <h3>Conjunto Vintage</h3>
-          <p>Consultar</p>
-        </div>
+      <!-- PROYECTO 1 -->
+      <div class="project-card">
+        <div class="project-image">
+  <img src="assets/img/vintagemoda-glow/preview-vintage-moda-glow.jpg" alt="Vintage Moda Glow">
+  <div class="overlay">
+    <span>HTML</span>
+    <span>CSS</span>
+  </div>
+</div>
+        <h4>Vintage Moda Glow</h4>
+        <p>Landing page para emprendimiento de moda. Diseño moderno y enfoque visual.</p>
+        <a href="index.html" class="btn small">Ver proyecto</a>
       </div>
-    </div>
-  </section>
 
-  <!-- SOBRE -->
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <h2>Sobre vintagemoda.glow</h2>
-      <p>
-        Somos un emprendimiento independiente enfocado en moda vintage.
-        Seleccionamos cada prenda buscando calidad, estilo y comodidad.
-        Creemos en una moda con identidad, pensada para destacar.
-      </p>
+      <!-- PROYECTO FUTURO -->
+      <div class="project-card coming-soon">
+        <h4>Próximo proyecto</h4>
+        <p>En desarrollo 🚧</p>
+      </div>
+
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>📲 WhatsApp</p>
-      <p>📸 Instagram: @vintagemoda.glow</p>
-      <p>📍 Envíos a todo el país</p>
-
-   <a 
-  href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20productos%20de%20vintagemoda.glow" 
-  class="btn-whatsapp" 
-  target="_blank"
->
-  Escribinos por WhatsApp
-</a>
-    </div>
+  <section class="contact">
+    <h3>Contacto</h3>
+    <p>Email: <a href="mailto:cintiaramos.dev@gmail.com">cintiaramos.dev@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/cinyoseli" target="_blank">github.com/cinyoseli</a></p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>© 2026 vintagemoda.glow - Todos los derechos reservados</p>
-    </div>
+    <p>© 2026 · Cintia Ramos</p>
   </footer>
 
 </body>
