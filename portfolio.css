@@ -255,3 +255,6 @@ footer {
   font-weight: 500;
 }
 
+.hero .btn {
+  align-self: center;
+}
