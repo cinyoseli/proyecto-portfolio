@@ -1,14 +1,15 @@
 // ============================================
-// BLOG JAVASCRIPT - FILTROS Y COMENTARIOS
+// BLOG JAVASCRIPT - FILTROS, BÚSQUEDA Y COMENTARIOS
 // ============================================
 
 // ALMACENAR COMENTARIOS EN LOCALSTORAGE
 const commentsStorage = JSON.parse(localStorage.getItem('blogComments')) || {};
 
-// INICIALIZAR COMENTARIOS AL CARGAR LA PÁGINA
+// INICIALIZAR AL CARGAR LA PÁGINA
 document.addEventListener('DOMContentLoaded', function() {
   loadAllComments();
   setupFilterButtons();
+  setupSearch();
 });
 
 // ============================================
@@ -177,6 +178,33 @@ function escapeHtml(text) {
     "'": '&#039;'
   };
   return text.replace(/[&<>"']/g, m => map[m]);
+}
+
+// ============================================
+// BUSCADOR
+// ============================================
+
+function setupSearch() {
+  const searchInput = document.getElementById('searchBlog');
+  if (!searchInput) return;
+  
+  searchInput.addEventListener('keyup', function() {
+    const searchTerm = this.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+    
+    articles.forEach(article => {
+      const title = article.querySelector('.article-content h3').textContent.toLowerCase();
+      const excerpt = article.querySelector('.article-excerpt').textContent.toLowerCase();
+      
+      if (title.includes(searchTerm) || excerpt.includes(searchTerm) || searchTerm === '') {
+        article.style.display = 'block';
+        setTimeout(() => article.style.opacity = '1', 10);
+      } else {
+        article.style.opacity = '0';
+        setTimeout(() => article.style.display = 'none', 300);
+      }
+    });
+  });
 }
 
 // ============================================

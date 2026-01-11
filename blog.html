@@ -36,7 +36,8 @@
 
   <!-- GRID DE ARTÍCULOS -->
   <main class="blog-container">
-    <div class="articles-grid">
+    <div class="blog-wrapper">
+      <div class="articles-section">
 
       <!-- ARTÍCULO 1 -->
       <article class="article-card" data-category="destinos">
@@ -279,7 +280,54 @@
       </article>
 
     </div>
-  </main>
+
+    <!-- SIDEBAR DERECHA -->
+    <aside class="blog-sidebar">
+      <!-- BUSCADOR -->
+      <div class="sidebar-widget search-widget">
+        <input type="text" id="searchBlog" class="search-input" placeholder="Buscar artículos...">
+      </div>
+
+      <!-- ÚLTIMAS PUBLICACIONES -->
+      <div class="sidebar-widget">
+        <h4 class="widget-title">Últimas Publicaciones</h4>
+        <ul class="recent-posts">
+          <li><a href="#" class="recent-link">5 Destinos Accesibles en 2026</a></li>
+          <li><a href="#" class="recent-link">Cómo Planificar un Viaje con Bajo Presupuesto</a></li>
+          <li><a href="#" class="recent-link">Qué Llevar en tu Mochila de Viaje</a></li>
+          <li><a href="#" class="recent-link">Qué Ver en Barcelona: Guía Completa</a></li>
+          <li><a href="#" class="recent-link">Mejores Destinos de Playa por Temporada</a></li>
+        </ul>
+      </div>
+
+      <!-- TEMAS DESTACADOS -->
+      <div class="sidebar-widget">
+        <h4 class="widget-title">Temas Destacados</h4>
+        <div class="featured-topics">
+          <a href="#" class="topic-tag">Destinos Económicos</a>
+          <a href="#" class="topic-tag">Mochilero</a>
+          <a href="#" class="topic-tag">Playas</a>
+          <a href="#" class="topic-tag">Ciudades Históricas</a>
+          <a href="#" class="topic-tag">Aventura</a>
+          <a href="#" class="topic-tag">Viaje en Pareja</a>
+          <a href="#" class="topic-tag">Fotografía</a>
+          <a href="#" class="topic-tag">Gastronomía</a>
+        </div>
+      </div>
+
+      <!-- CATEGORÍAS -->
+      <div class="sidebar-widget">
+        <h4 class="widget-title">Categorías</h4>
+        <ul class="categories-list">
+          <li><a href="#" class="category-link" data-cat="destinos">Destinos</a></li>
+          <li><a href="#" class="category-link" data-cat="presupuesto">Presupuesto</a></li>
+          <li><a href="#" class="category-link" data-cat="guias">Guías</a></li>
+          <li><a href="#" class="category-link" data-cat="checklists">Checklists</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
 
   <footer>
     <p>© 2026 · Blog de Viajes - Cintia Ramos</p>
