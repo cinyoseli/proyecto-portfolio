@@ -53,38 +53,57 @@
 }
 
 /* =========================
+   CONTACT SECTION OVERRIDE
+========================= */
+
+.contact {
+  background: linear-gradient(135deg, rgba(10, 5, 20, 0.95), rgba(30, 10, 40, 0.9)) !important;
+  border-top: 1px solid rgba(199, 166, 255, 0.15);
+}
+
+.contact h3 {
+  color: #f0f0f5;
+}
+
+.contact p {
+  color: rgba(240, 240, 245, 0.85);
+}
+
+/* =========================
    IMPROVED GALLERY LAYOUTS
 ========================= */
 
 /* Invitaciones - Tamaño mediano, más espacio */
 .gallery-invitations {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
 .gallery-invitations img {
-  max-height: 400px;
+  max-height: 450px;
   object-fit: contain;
   background-color: rgba(199, 166, 255, 0.05);
   padding: 15px;
   border-radius: 12px;
 }
 
-/* Feed - Imágenes cuadradas/rectangulares */
+/* Feed - Imágenes completas */
 .gallery-feed {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
 .gallery-feed img {
-  max-height: 350px;
-  object-fit: cover;
-  aspect-ratio: 1/1;
+  max-height: 450px;
+  object-fit: contain;
+  background-color: rgba(199, 166, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
 }
 
 /* Historias - Formato vertical optimizado */
 .gallery-stories {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
 }
 
@@ -92,7 +111,8 @@
   max-height: 450px;
   object-fit: contain;
   background-color: rgba(199, 166, 255, 0.05);
-  aspect-ratio: 9/16;
+   padding: 15px;
+ border-radius: 12px;
 }
 
 /* Responsivo para mobile */
@@ -119,24 +139,57 @@
 ========================= */
 
 .hero-small {
-  min-height: 60vh;
-  padding: 40px 20px;
+   min-height: 100vh;
+ padding: 180px 20px 40px 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background: linear-gradient(135deg, #000000, #0a0508);
 }
 
 .hero-small h1 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .hero-small p {
-  font-size: 1rem;
+  font-size: 1.15rem;
+  max-width: 700px;
+  line-height: 1.8;
 }
 
 @media (max-width: 768px) {
+  .hero-small {
+    padding: 60px 20px 40px 20px;
+  }
+  
   .hero-small h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   
   .hero-small p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
+}
+
+/* =========================
+   GALLERY SECTION TITLES
+========================= */
+
+.gallery-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }

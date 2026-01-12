@@ -4422,7 +4422,7 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
-}ax(220px, 1fr));
+}
 /* =========================
    HERO SMALL
 ========================= */
@@ -5912,7 +5912,7 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
-}0.3s ease;
+}
 /* =========================
    HERO SMALL
 ========================= */
